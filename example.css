@@ -1,0 +1,121 @@
+#container {
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 25%  1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+     "nav main"
+    
+    
+  }
+ 
+  #container > #navbar {
+    grid-area: nav;
+    background-color: #ffa08c;
+    position:fixed ;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    overflow: auto;
+  }
+  /*
+  #container > header{
+    grid-area: head;
+  }*/
+  
+  #container > #main-doc {
+    grid-area: main;
+    position: inherit;
+    padding-left:20px;
+    text-align: justify;
+    
+  }
+
+  footer{
+    grid-area: pie;
+    background-color: #bd1616;
+  }
+header{
+  position: fixed;
+  top: 0;
+  width:25% ; 
+  text-align: justify;
+  background-color: azure;
+}
+h2{margin-bottom: 0;
+margin-top: 0;}
+ nav{
+   margin-top: 130px;
+   padding-left: 10px;
+   padding-top: 5px;
+ }
+  a.nav-link {
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-bottom: 50px; 
+    
+  }
+  
+
+  .main-section,p{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 5px;
+    padding-right:5px ;
+    border-top-style: dashed;
+    border-right-style: double;
+    border-bottom-style: dotted;
+    border-left-style: solid; 
+   background-color: blanchedalmond;
+   border-radius: 10px;
+   border-top-color: #CC0000;
+  border-right-color: rgb(81, 84, 85);
+  border-bottom-color: #00FF00;
+  border-left-color: #CCC;
+     
+   }
+   
+  
+  
+  @media screen and (max-width:760px) {
+    
+  div, #container{
+   display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "main";
+    
+     }
+     #container > #navbar {
+      grid-area: nav;
+      background-color: #ffa08c;
+      position:inherit;
+      top: 0px;
+      bottom: 0;
+      left: 0;
+      width: auto;
+      overflow: auto;
+    }
+
+    header{
+  
+      position: fixed;
+      top: 0;
+      width:auto;
+      
+      
+    }
+    #container > #main-doc {
+      grid-area: main;
+      position: inherit;
+      padding-left:20px;
+      text-align: justify;
+      width: auto;
+    }
+  
+    
+    }
+  
+
+
